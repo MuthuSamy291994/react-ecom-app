@@ -26,12 +26,6 @@ const Login = () => {
     setPass(e.target.value);
   };
   const submit = () => {
-    // if (username == "kumaresh" && password == "kumar@123") {
-    //   navigate("Navbar");
-    // } else {
-    //   navigate("/");
-    // }
-
     const isExist = client.find((cred) => cred.username === uname);
     if (!isExist) {
       toast("Username doesnt exist");
